@@ -126,51 +126,51 @@
       {
         title: 'GT3 Challenge',
         races: [
-          'Red Bull Ring Grand Prix', 
-          'Circuit des 24 Heures du Mans 24 Heures du Mans', 
-          'Autódromo Hermanos Rodríguez Grand Prix', 
-          'Circuit de Barcelona Catalunya Grand Prix', 
-          'Indianapolis Motor Speedway Road Course', 
-          'Hockenheimring Baden-Württemberg Grand Prix', 
-          'Sebring International Raceway International',
-          'Autódromo José Carlos Pace Grand Prix',
-          'Suzuka International Racing Course Grand Prix',
+          'Red Bull Ring - Grand Prix', 
+          'Circuit des 24 Heures du Mans - 24 Heures du Mans', 
+          'Autódromo Hermanos Rodríguez - Grand Prix', 
+          'Circuit de Barcelona Catalunya - Grand Prix', 
+          'Indianapolis Motor Speedway - Road Course', 
+          'Hockenheimring Baden-Württemberg - Grand Prix', 
+          'Sebring International Raceway - International',
+          'Autódromo José Carlos Pace - Grand Prix',
+          'Suzuka International Racing Course - Grand Prix',
           'Mount Panorama Circuit',
           'Watkins Glen International Boot',
-          'Autodromo Internazionale del Mugello Grand Prix'
+          'Autodromo Internazionale del Mugello - Grand Prix'
         ]
       },
       {
         title: 'GT3 USA',
         races: [
-          'WeatherTech Raceway at Laguna Seca Full Course',
+          'WeatherTech Raceway at Laguna Seca - Full Course',
           'Road America Full Course',
-          'Autódromo José Carlos Pace Grand Prix',
-          'Autódromo Hermanos Rodríguez Grand Prix',
-          'Sonoma Raceway Cup Long',
-          'Road Atlanta Full Course',
-          'Lime Rock Park Grand Prix',
-          'Virginia International Raceway Full Course',
+          'Autódromo José Carlos Pace - Grand Prix',
+          'Autódromo Hermanos Rodríguez - Grand Prix',
+          'Sonoma Raceway - Cup Long',
+          'Road Atlanta - Full Course',
+          'Lime Rock Park - Grand Prix',
+          'Virginia International Raceway - Full Course',
           'Circuit Gilles Villeneuve',
-          'Indianapolis Motor Speedway Road Course',
+          'Indianapolis Motor Speedway - Road Course',
           'Summit Point Raceway',
-          'Mid-Ohio Sports Car Course Full Course'
+          'Mid-Ohio Sports Car Course - Full Course'
         ]
       },
       {
         title: 'GT3 ASIA',
         races: [
-          'Okayama International Circuit Full Course',
-          'Suzuka International Racing Course Grand Prix',
-          'Fuji International Speedway No Chicane',
-          'Shell V-Power Motorsport Park at The Bend International',
-          'Mobility Resort Motegi Grand Prix',
+          'Okayama International Circuit - Full Course',
+          'Suzuka International Racing Course - Grand Prix',
+          'Fuji International Speedway - No Chicane',
+          'Shell V-Power Motorsport Park at The Bend - International',
+          'Mobility Resort Motegi - Grand Prix',
           'Phillip Island Circuit',
-          'Oran Park Raceway Grand Prix',
-          'Tsukuba Circuit 2000 Full',
+          'Oran Park Raceway - Grand Prix',
+          'Tsukuba Circuit - 2000 Full',
           'Fuji International Speedway',
           'Sandown International Motor Raceway',
-          'Winton Motor Raceway National Circuit',
+          'Winton Motor Raceway - National Circuit',
           'Shell V-Power Motorsport Park at The Bend GT Circuit'
         ]
       },
@@ -190,6 +190,40 @@
           'Sebring International Raceway - International',
           'Snetterton Circuit - 200'
         ]
+      },
+      {
+        title: 'LMP2 Challenge',
+        races:[
+          'Sebring International Raceway - International',
+          'Fuji International Speedway - Full Course',
+          'Road Atlanta - Full Course'
+          'Autodromo Internazionale Enzo e Dino Ferrari - Grand Prix',
+          'Algarve International Circuit - Grand Prix',
+          'Circuit des 24 Heures du Mans - 24 Heures du Mans',
+          'Autódromo Hermanos Rodríguez - Grand Prix',
+          'Autodromo Nazionale Monza - Grand Prix',
+          'Canadian Tire Motorsports Park',
+          'Daytona International Speedway - Road Course',
+          'Nürburgring Grand-Prix-Strecke - BES/WEC',
+          'Circuit de Spa-Francorchamps - Grand Prix Pits'
+        ]
+      },
+      {
+        title: 'LMP3 Trophy',
+        races:[
+          'Charlotte Motor Speedway - Roval 2025',
+          'Indianapolis Motor Speedway - Road Course',
+          'Autódromo Hermanos Rodríguez - Grand Prix',
+          'Road Atlanta - Full Course',
+          'Nürburgring Nordschleife - Industriefahrten',
+          'Autódromo José Carlos Pace - Grand Prix',
+          'Brands Hatch Circuit - Grand Prix',
+          'Red Bull Ring - Grand Prix',
+          'Hungaroring',
+          'Circuit Zandvoort - Grand Prix',
+          'Circuit des 24 Heures du Mans - 24 Heures du Mans',
+          'Hockenheimring Baden-Württemberg	- Grand Prix'
+        ]
       }
     ];
 
@@ -205,13 +239,13 @@
       const content = document.createElement("div");
       content.classList.add("accordion-content");
 
-      const ul = document.createElement("ul");
+      const ol = document.createElement("ol");
       event.races.forEach(race => {
         const li = document.createElement("li");
         li.textContent = race;
-        ul.appendChild(li);
+        ol.appendChild(li);
       });
-      content.appendChild(ul);
+      content.appendChild(ol);
 
     header.addEventListener("click", () => {
         const isOpen = content.style.display === "block";
